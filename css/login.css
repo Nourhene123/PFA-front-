@@ -1,0 +1,141 @@
+.login-design{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    height: 100vh;
+}
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.login h2{
+    font-size: 26px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.input-label{
+    position: relative;
+    top: 4px;
+    left: -12px;
+}
+.input-label2{
+    position: relative;
+    top: 12px;
+    left: -108px;
+    
+
+}
+.input-1{
+    position: relative;
+    top: 8px;
+}
+.input-2{
+    width: 70%;
+    height: 2.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    
+    padding-left: .875rem;
+    position: relative;
+    top: 18px;
+    border: 1px solid #275a5f;
+    border-radius: 8px;
+   
+   
+
+}
+
+.waves{
+ 
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+ background: url(/img/277712614_945490816162305_8785543182057910948_n.png);
+}
+.container{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+}
+.waves img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.login {
+   text-align: center;
+   width: 60%;
+
+   
+}
+.login h2{
+    font-weight: 200px;
+    
+
+}
+.input-label{
+    position: relative;
+    left: -128px;
+    
+    
+}
+.input-1{
+    width: 70%;
+    height: 2.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    
+    padding-left: .875rem;
+    border: 1px solid #275a5f;
+    border-radius: 8px;
+   
+}
+a{
+    position: relative;
+    right: -32px;
+    font-size: 10px;
+}
+.btn{
+    position: relative;
+    left: -6px;
+}
+
+span{
+    font-size: 14px;
+    position: relative;
+    left: 8px;
+}
+.btn2{
+    width: 75%;
+    height: 2.1rem;
+    background-color: #f26852;
+    color: aliceblue;
+    border: 1px solid #f26852;
+    border-radius: 12px;
+
+}
+.btn1{
+    width: 70%;
+    height: 2.1rem;
+    background-color: #275a5f;
+    color: aliceblue;
+    border: 1px solid #275a5f ;
+    border-radius: 12px;
+    position:relative;
+    left: -28px;
+}
+.remember{
+    position: relative;
+    right: 23px;
+}
+
+
+
+

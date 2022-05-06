@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device,initial-scale=1..0" />
+    <title>Description</title>
+    <link rel="stylesheet" href="/css/description.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <header></header>
+
+    <section id="freelancer-profil">
+      <img src="/img/undraw_profile_pic_ic-5-t.svg" alt="this a freelancer image" />
+      <h1>Nom Prenom</h1>
+      <h3>Speciality</h3>
+    </section>
+
+    <div id="content">
+      <aside>
+        <div class="contact">
+          <ul>
+            <li>
+              <em class="bi bi-envelope"></em> Mail:
+              <a href="mailto:nomprenom@example.com">foulenbenfoulen@exemple.com</a>
+            </li>
+            <li><em class="bi bi-phone"></em> Phone: +216 90 321 654</li>
+          </ul>
+          <ul class="social-media">
+            <li><a href="" class="bi bi-facebook"></a></li>
+            <li><a href="" class="bi bi-instagram"></a></li>
+            <li><a href="" class="bi bi-twitter"></a></li>
+            <li><a href="" class="bi bi-whatsapp"></a></li>
+          </ul>
+        </div>
+
+        <div class="clients-reviews">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2"><h2>Clients Reviews</h2></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="like">Client Satisfied</td>
+                <td class="dislike">Client Not Satisfied<br /></td>
+              </tr>
+              <tr>
+                <td class="like">
+                  <i>50</i>
+                  <!-- <span class="bi-hand-thumbs-up"></span> -->
+                </td>
+                <td class="dislike">
+                  <i>10</i>
+                  <!-- <span class="bi-hand-thumbs-down"></span> -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </aside>
+
+      <section id="freelancer-description">
+        <div class="persoanl-statement">
+          <h3>persoanl Statement</h3>
+          <p>
+            “Proactive UX designer with 5 years of experience in delivering
+            enjoyable web and mobile products for the FinTech industry. Designed
+            UI, UX and marketing materials for 6 apps and 3 games at Company X,
+            2 of which were featured in Apple’s App Store. Skilled with Sketch,
+            and Adobe Creative Suite”.
+          </p>
+        </div>
+
+        <div class="service-examples">
+          <h3>Services Examples</h3>
+          <!--image slider start-->
+          <div class="slider">
+            <div class="slides">
+              <!--radio buttons start-->
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <input type="radio" name="radio-btn" id="radio4" />
+              <!--radio buttons end-->
+              <!--slide images start-->
+              <div class="slide first">
+                <img src="/img/undraw_mobile_payments_re_7udl.svg" alt="this is a service examples" />
+              </div>
+              <div class="slide">
+                <img src="/img/undraw_services_re_hu5n.svg" alt="this is a service examples" />
+              </div>
+              <div class="slide">
+                <img src="/img/undraw_product_explainer_8jbm.svg" alt="this is a service examples" />
+              </div>
+              <div class="slide">
+                <img src="/img/undraw_mobile_web_-2-g8b.svg" alt="this is a service examples" />
+              </div>
+              <!--slide images end-->
+              <!--automatic navigation start-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+              <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+          </div>
+          <!--image slider end-->
+
+          <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+              document.getElementById("radio" + counter).checked = true;
+              counter++;
+              if (counter > 4) {
+                counter = 1;
+              }
+            }, 5000);
+          </script>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

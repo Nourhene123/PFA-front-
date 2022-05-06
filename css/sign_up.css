@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 10px 40px ;
+    border-radius: 5px ;
+    display: flex;
+    height: 520px;
+    border: 1px solid black;
+    margin-top: 50px;
+    position: relative;
+    right: -80px;
+    top: -40px;
+    
+}
+.container h2{
+    font-size: 50px;
+    font-weight: 400;
+    position: relative;
+    color: #275a5f;
+    top: -48px;
+    left: 60px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+.slide{
+    position: relative;
+    right: -420px;
+}
+
+
+.content-box{
+    max-width: 850px;
+    display:grid ;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+    position: relative;
+    top: -38px;
+  
+    
+
+
+}
+.user-details .input-box input{
+    height: 40px;
+    width: 100%;
+    border:  1px solid rgb(110, 105, 105);
+
+}
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    top: -19px;
+
+
+}
+#lien{
+    position: relative;
+    left: 350px;
+    
+}
+button{
+    
+    height: 30px;
+    width: 282px;
+    position: relative;
+    top: -12px;
+    
+    
+}
+.btn0{
+    background-color: #f26852;
+    border: 3px solid #f26852;
+    color:whitesmoke;
+}
+.btn1{
+    position: relative;
+    left: 35px;
+    background-color: #275a5f;
+    border: 3px solid #275a5f ;
+ 
+    color: rgb(48, 245, 123);
+}
+
+span {
+    position: relative;
+    top: -12px;
+}
