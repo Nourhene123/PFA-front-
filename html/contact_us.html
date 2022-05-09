@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Form</title>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="/css/contact_us.css" />
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
@@ -11,78 +12,84 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <span class="big-circle"></span>
-      <div class="form">
-        <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum adipisci recusandae praesentium dicta!
-          </p>
-
-          <div class="info">
-            <div class="information">
-              <img src="/img/undraw_my_location_re_r52x.svg" class="icon" alt="" />
-              <p>7050 Menzel Bourguiba Bizerte ,Tunis</p>
+    <div class="container d-flex justify-content-center align-items-center h-screen mx-auto">
+      <div class="">
+        <span class="big-circle"></span>
+        <div class="form">
+          <div class="contact-info">
+            <div class="mb-5">
+              <h3 class="title">Let's get in touch</h3>
+            <p class="text text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              dolorum adipisci recusandae praesentium dicta!
+            </p>
             </div>
-            <div class="information">
-              <img src="/img/undraw_personal_email_re_4lx7.svg" class="icon" alt="" />
-              <p>EzyService@gmail.com</p>
+  
+            <div class="info mb-4">
+              <div class="information d-flex align-items-center mb-4">
+                <img src="/img/undraw_my_location_re_r52x.svg" class="icon" alt="" />
+                <p>7050 Menzel Bourguiba Bizerte ,Tunis</p>
+              </div>
+              <div class="information d-flex align-items-center mb-4">
+                <img src="/img/undraw_personal_email_re_4lx7.svg" class="icon" alt="" />
+                <p>EzyService@gmail.com</p>
+              </div>
+              <div class="information d-flex align-items-center">
+                <img src="/img/undraw_mobile_app_re_catg.svg" class="icon" alt="" />
+                <p>97-855-123</p>
+              </div>
             </div>
-            <div class="information">
-              <img src="/img/undraw_mobile_app_re_catg.svg" class="icon" alt="" />
-              <p>97-855-123</p>
+  
+            <div class="social-media d-flex flex-column align-items-center">
+              <p>Connect with us</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f "></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
             </div>
           </div>
-
-          <div class="social-media">
-            <p>Connect with us :</p>
-            <div class="social-icons">
-              <a href="#">
-                <i class="fab fa-facebook-f "></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="index.html" autocomplete="off">
+              <h3 class="title mb-5">Contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input rounded-3" />
+                <label for="">Username</label>
+                <span>Username</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input rounded-3" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container">
+                <input type="tel" name="phone" class="input rounded-3" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container textarea mb-5">
+                <textarea name="message" class="input rounded-3"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <div class="w-100">
+                <button class="btn btn-light-orange w-100">Send</button>
+              </div>
+            </form>
           </div>
-        </div>
-
-        <div class="contact-form">
-          <span class="circle one"></span>
-          <span class="circle two"></span>
-
-          <form action="index.html" autocomplete="off">
-            <h3 class="title">Contact us</h3>
-            <div class="input-container">
-              <input type="text" name="name" class="input" />
-              <label for="">Username</label>
-              <span>Username</span>
-            </div>
-            <div class="input-container">
-              <input type="email" name="email" class="input" />
-              <label for="">Email</label>
-              <span>Email</span>
-            </div>
-            <div class="input-container">
-              <input type="tel" name="phone" class="input" />
-              <label for="">Phone</label>
-              <span>Phone</span>
-            </div>
-            <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
-              <label for="">Message</label>
-              <span>Message</span>
-            </div>
-            <input type="submit" value="Send" class="btn" />
-          </form>
         </div>
       </div>
     </div>

@@ -1,33 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body,
-input,
-textarea {
-  font-family: "Poppins", sans-serif;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 2rem;
-  background-color: #fafafa;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@import "main.css";
 
 .form {
   width: 100%;
   max-width: 820px;
-  background-color: #fff;
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -37,13 +13,13 @@ textarea {
 }
 
 .contact-form {
-  background-color: #275a5f;
+  background-color: var(--green-800);
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%,#f26852);
+  background: linear-gradient(135deg, transparent 20%, var(--pink-200));
   position: absolute;
 }
 
@@ -66,7 +42,7 @@ textarea {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #275a5f;
+  background-color: var(--green-800);
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -80,11 +56,11 @@ form {
 }
 
 .title {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
+  font-size: 1.75rem;
   line-height: 1;
-  margin-bottom: 0.7rem;
+  text-align: center;
 }
 
 .input-container {
@@ -95,14 +71,13 @@ form {
 .input {
   width: 100%;
   outline: none;
-  border: 2px solid #fafafa;
+  border: 1px solid var(--off-white);
   background: none;
   padding: 0.6rem 1.2rem;
-  color: #fff;
+  color: white;
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
-  border-radius: 25px;
   transition: 0.3s;
 }
 
@@ -117,39 +92,21 @@ textarea.input {
 .input-container label {
   position: absolute;
   top: 50%;
-  left: 15px;
+  left: 5px;
   transform: translateY(-50%);
   padding: 0 0.4rem;
-  color: #fafafa;
+  color: var(--off-white);
   font-size: 0.9rem;
   font-weight: 400;
   pointer-events: none;
   z-index: 1000;
-  transition: 0.5s;
+  transition: 0.2s;
+  font-weight: 700;
 }
 
 .input-container.textarea label {
   top: 1rem;
   transform: translateY(0);
-}
-
-.btn {
-  padding: 0.6rem 1.3rem;
-  background-color: #fff;
-  border: 2px solid #fafafa;
-  font-size: 0.95rem;
-  color: #f26852;
-  line-height: 1;
-  border-radius: 25px;
-  outline: none;
-  cursor: pointer;
-  transition: 0.3s;
-  margin: 0;
-}
-
-.btn:hover {
-  background-color: transparent;
-  color: #fff;
 }
 
 .input-container span {
@@ -162,6 +119,7 @@ textarea.input {
   color: transparent;
   pointer-events: none;
   z-index: 500;
+  font-weight: 700 !important;
 }
 
 .input-container span:before,
@@ -172,7 +130,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color:grey;
+  background-color: var(--green-800);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -204,17 +162,17 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #f26852;
+  color: var(--pink-200);
 }
 
 .text {
-  color: #333;
+  color: var(--gray-600);
   margin: 1.5rem 0 2rem 0;
 }
 
 .information {
   display: flex;
-  color: #555;
+  color: var(--gray-600);
   margin: 0.7rem 0;
   align-items: center;
   font-size: 0.95rem;
@@ -230,7 +188,7 @@ textarea.input {
 }
 
 .social-media p {
-  color: #333;
+  color: var(--gray-600);
 }
 
 .social-icons {
@@ -242,8 +200,8 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(180deg, #f26852,#275a5f);
-  color: #fff;
+  background: linear-gradient(180deg, var(--pink-200), var(--green-800));
+  color: white;
   text-align: center;
   line-height: 35px;
   margin-right: 0.5rem;
@@ -259,13 +217,12 @@ textarea.input {
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #275a5f ;
+  border: 22px solid var(--green-800);
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
   opacity: 0.3;
 }
-
 
 .square {
   position: absolute;
@@ -299,7 +256,6 @@ textarea.input {
     height: 350px;
   }
 
- 
   .text {
     margin: 1rem 0 1.5rem 0;
   }

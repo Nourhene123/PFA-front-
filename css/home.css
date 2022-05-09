@@ -1,9 +1,4 @@
-body{
-    width: 99%;
-    height: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
+@import 'main.css';
 
 
 #bg{
@@ -43,29 +38,21 @@ header a {
 .navbar li{
     list-style-type: none;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 1rem;
 }
 
 
 .navbar li a{
     text-decoration: none;
-    padding: 30px;
-    font-size: 18px;
-    position: relative;
-    top:-10px;
-    left:220px;
-    color: black;
+    color: var(--gray-900);
 }
 h2 span{
-    color:#f26852;
+    color:var(--pink-200);
     position: relative;
     
     left: -3px;
 }
-.navbar li a :hover{
-    background:#f26852;
-    transition: ease-out;
-}
+
 
 .signbar ul{
     margin: 10px ;
@@ -77,7 +64,7 @@ h2 span{
     position: relative;
     top:-15px;
     left:80x;
-    color: #ffffff;
+    color: white;
 }
 
 .signbar ul {
@@ -90,7 +77,7 @@ h2 span{
     padding: 6px 12px;
     margin-right: 5px;
     border-radius: 20px;
-    background-color: #275a5f;
+    background-color: var(--green-800);
    box-shadow: 2px -3px 4px 0px rgba(0, 0, 0, 0.2);
     font-size:15px;
     position: relative;
@@ -98,7 +85,7 @@ h2 span{
     
 }
 #sign-in{
-    background-color: #275a5f;
+    background-color: var(--green-800);
     box-shadow: 1px -3px 6px 0px rgba(0, 0, 0, 0.3);
 
     font-size:15px;
@@ -118,17 +105,14 @@ h2 span{
 
 
 .logo img{
-    width: 60px;
-    height: 60px;
-    position: relative;
-    top: -15px;
+
 }
 
 
 /* hero section style */
 
 #hero h2{
-    color: #275a5f;
+    color: var(--green-800);
     font-size: 35px;
     position:absolute;
     margin-left: 230px;
@@ -144,7 +128,9 @@ h2 span{
     left: 220px;
 }
 
-
+.hero-img{
+    max-width: 450px;
+}
 
 #hero .searchbox{
     width: 390px;
@@ -177,7 +163,7 @@ h2 span{
     top: -30px;
 }
 .theme-text {
-    color: #f26852;
+    color: var(--pink-200);
   }
   
 .card-img-top {
@@ -187,10 +173,12 @@ h2 span{
 .card {
     z-index: 1;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
+    
   }
 .card:hover {
-    color: white;
+    color: white !important;
+    
   }
 .card::before {
     content: "";
@@ -230,8 +218,8 @@ h2 span{
     align-items:flex-start;
     justify-content:space-around; 
     border: 1px outset;
-    color: #ffffff;
-    background-color: #275a5f;
+    color: white;
+    background-color: var(--green-800);
     visibility: hidden;
 }
 
@@ -268,7 +256,7 @@ h2 span{
 }
 
 .cards{
-    display: flex;
+  /*  display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -279,19 +267,20 @@ h2 span{
     border: 1px outset transparent;
     border-radius: 10px;
     box-shadow: 0 4px 14px 0 rgb(0 0 0/ 10%);
-    background-color: #ffffff;
-    text-decoration: none;
+    background-color: white;
+    text-decoration: none;*/
     position: relative;
 }
 
 .cards::before{
     content: "";
     position: absolute;
-    background-color: #f26852;
+    background-color: var(--pink-200);
     border-radius: 10px 10px 0px 0px;
     height: 100px;
     width: 100%;
     top: 0px;
+    left: 0;
 }
 
 .card-content{
@@ -306,7 +295,7 @@ h2 span{
     position: relative;
     left: 80px;
     top: 24px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 50%;
 }
 
@@ -321,7 +310,7 @@ h2 span{
 
 #evaluation span{
     border: 1px outset;
-    background-color: #ffffff;
+    background-color: white;
     padding: 3px;
     padding-inline :15px;
     border: 1px outset;
@@ -336,20 +325,9 @@ h2 span{
     margin-left: 25px;
 }
 
-.service-description a{
-    text-decoration: none;
-    border: 1px outset transparent;
-    border-radius: 20px;
-    padding: 8px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #275a5f;
-    box-shadow: 2px -3px 6px 0px rgba(0, 0, 0, 0.3);
-}
 
-.service-description{
-    margin-bottom: 15px;
-}
+
+
 .name{
     position: relative;
     top: 22px;
@@ -372,7 +350,7 @@ h2 span{
 
 /* footer style */
 footer{
-    background-color:#275a5f;
+    background-color:var(--green-800);
     padding: 5px;
     font: 1em sans-serif;
     width: 99%;
@@ -407,21 +385,21 @@ footer .navigation{
 
 footer a{
     text-decoration: none;
-    color: #ffffff;
+    color: white;
 }
 
 
 footer h1{
-    color:#275a5f;
-    background-color: #ffffff;
+    color:var(--green-800);
+    background-color: white;
     padding: 3px;
 }
 
 footer p{
     text-align: center;
-    color:#ffffff;
+    color:white;
 }
 
 footer h3 , footer span{
-    color: #ffffff;
+    color: white;
 }

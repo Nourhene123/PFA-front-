@@ -1,16 +1,11 @@
-/* body */
-body{
-  background-color: rgb(240, 240, 240);;
-}
+@import 'main.css';
 
-/* header */
 
 
 /* freelancer-profil style */
 #freelancer-profil{
-  background-color: #275a5f;
+  background-color: var(--green-800);
   height: 180px;
-  margin-bottom: 200px;
 }
 #freelancer-profil img{
   position: absolute;
@@ -18,7 +13,7 @@ body{
   left: 100px;
   width: 220px;
   height: 220px;
-  border: 20px solid #275a5f;
+  border: 20px solid var(--green-800);
   border-radius: 50%;
 }
 
@@ -27,60 +22,36 @@ body{
   top: 50px;
   left: 380px;
   font-size: 40px;
-  color: #f26852;
+  color: var(--pink-200);
+  font-weight: 800;
 }
 #freelancer-profil h3{
   position: absolute;
   top: 110px;
-  left: 400px;
-  color: antiquewhite;
+  left: 380px;
+  color: var(--off-white);
 }
 
 /* content style */
 #content{
-  display: flex;
+  /*display: flex;*/
 }
 
 
 /* aside style */
 aside{
-  width:30%
 }
 
 /* clients-reviews style */
 .clients-reviews{
   border: 1px solid transparent;
   border-radius: 30px;
-  background-color: #fff;
+  background-color: white;
   padding: 20px;
   position: relative;
-  top: -60px;
-
 }
 .clients-reviews th{
-  color: #275a5f;
-}
-table{
-  border-collapse: collapse;
-  border-width: 2px;
-}
-thead th {
-  text-align: center;
- }
- tbody tr{
-  border: 1px solid;
- }
-td{
-  padding: 20px;
-  text-align: center;
-}
-.like , .dislike{
-  font-size: 20px;
-}
-
-td i{
-  font-size: 30px;
-  font-weight: 15px;
+  color: var(--green-800);
 }
 
 
@@ -88,13 +59,10 @@ td i{
 .contact{
   font-size: 17px;
   border: 1px solid transparent;
-  border-radius: 30px;
-  background-color: #fff;
-  margin-bottom: 150px;
+  background-color: white;
 }
 .contact li{
   list-style-type:none;
-  padding: 10px;
 }
 .contact .social-media{
   display: flex;
@@ -105,7 +73,7 @@ td i{
 }
 .contact .social-media a{
   text-decoration: none;
-  color: #000000;
+  color: var(--gray-900);
 }
 .contact .social-media a:hover{
   font-size: 25px;
@@ -116,7 +84,7 @@ td i{
 #freelancer-description{
   border: 1px solid transparent;
   border-radius: 30px;
-  background-color: #fff;
+  background-color: white;
   height: 700px;
   width: 60%;
   padding: 20px;
@@ -124,15 +92,13 @@ td i{
 }
 
 #freelancer-description h3{
-  font-size: 25px;
-  text-align: center;
-  color:black;
-  
+  text-align: left;
+  color:var(--gray-800);
+  font-weight: 800;
 }
 #freelancer-description .persoanl-statement p{
-  font-size: 20px;
-  padding: 20px;
-  margin: 10px;
+  color: var(--gray-600);
+  font-weight:500;
 }
 
 
@@ -178,7 +144,7 @@ td i{
   }
   
   .manual-btn{
-    border: 2px solid #000000;
+    border: 2px solid var(--gray-900);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -190,7 +156,7 @@ td i{
   }
   
   .manual-btn:hover{
-    background: #000000;
+    background: var(--gray-900);
   }
   
   #radio1:checked ~ .first{
@@ -220,7 +186,7 @@ td i{
   }
   
   .navigation-auto div{
-    border: 2px solid #000000;
+    border: 2px solid var(--gray-900);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -232,18 +198,18 @@ td i{
   }
   
   #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #000000;
+    background: var(--gray-900);
   }
   
   #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #000000;
+    background: var(--gray-900);
   }
   
   #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #000000;
+    background: var(--gray-900);
   }
   
   #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #000000;
+    background: var(--gray-900);
   }
 
