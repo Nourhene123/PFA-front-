@@ -38,7 +38,7 @@ header a {
 .navbar li{
     list-style-type: none;
     font-size: 20px;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 
@@ -308,22 +308,6 @@ h2 span{
     margin: 20px 10px 5px 0px;
 } 
 
-#evaluation span{
-    border: 1px outset;
-    background-color: white;
-    padding: 3px;
-    padding-inline :15px;
-    border: 1px outset;
-    border-radius: 10px;
-}
-
-.dislike {
-   margin-right: 25px; 
-}
-
-.like{
-    margin-left: 25px;
-}
 
 
 
